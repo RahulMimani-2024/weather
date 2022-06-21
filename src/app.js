@@ -5,7 +5,7 @@ const hbs = require('hbs');
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 const app = express();
-
+const port = process.eventNames.PORT || 3000
 const publicDirectoryPath = path.join(__dirname,'../public');
 const partialPath = path.join(__dirname,'../templates/partials');
 
@@ -73,6 +73,6 @@ app.get('*',(req,res)=>{
     });
 })
 
-app.listen(3000 , ()=>{
-    console.log("listening at 3000 port");
+app.listen(port, ()=>{
+    console.log(`listening at ${port} port`);
 })
