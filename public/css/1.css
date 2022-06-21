@@ -37,12 +37,19 @@ header a{
     width : 200px;
 }
 input{
+    display: block;
+    margin: auto;
+    width: 100%;
     border: 1px solid red;
     padding: 8px;
     border-radius: 1rem;
     text-align: center;
 }
 button{
+    width: 10rem;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
     border: 3px solid black;
     font-weight: bolder;
     padding: 8px;
@@ -54,4 +61,11 @@ button{
 button:hover{
     background-color: antiquewhite;
     color: black;
+}
+a{
+    font-style: italic;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
 }

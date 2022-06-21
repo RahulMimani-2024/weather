@@ -42,7 +42,8 @@ app.get('/weather' , (req,res)=>{
                 })
             }
             return res.send({
-                message : `It feels like ${message.message} and the temperature is ${message.temperature}`,
+                message : `It feels like ${message.message} and the temperature is ${message.temperature} .`,
+                greet : `Thanks for using the service . See you soon....`,
                 location : message.name
             })
         })
@@ -60,7 +61,7 @@ app.get('/help',(req,res)=>{
     res.render("help",{
         title : "Help",
         name :"Rahul Mimani",
-        message : "How May I Help You ?"
+        message : "For any queries feel free to contact me. Deatils are provided in the about section of the website. Thanks for visiting see you soon........"
     });
 })
 
