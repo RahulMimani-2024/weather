@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "[my-framework] build --output public",
+    "build": "Node.js build --output public",
     "start": "node src/app.js"
   },
   "author": "",
